@@ -1,0 +1,19 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "importHelpers": true,
+    "strict": true,
+    "module": "esnext",
+    "paths": {
+      "@entities": ["./src/entities/index.ts"],
+      "@entities/*": ["./src/entities/*"],
+      "@assets/*": ["./assets/*"],
+      "@systems": ["./src/systems/index.ts"],
+      "@systems/*": ["./src/systems/*"],
+      "@types": ["./src/types.ts"],
+      "@utils": ["./src/utils.ts"]
+    },
+  },
+  "include": ["**/*", "./src/global.d.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"],
+}
